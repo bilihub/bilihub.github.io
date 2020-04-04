@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title>Test</title>
+    <link rel="stylesheet" href="..\frozenui-2.0.0\release\css\frozenui.css">
+    <link rel="stylesheet" href="..\frozenui-2.0.0\release\css\style.css">
+</head>
+
+<body ontouchstart>
+    <section class="ui-container">
+        <div class="index-wrap">
+            <div class="header">
+                <h1>哈哈哈哈</h1>
+                <h2>体验更自然 触达更高效</h2>
+            </div>
+        </div>
+
+        <section id="form">
+            <p class="demo-desc">获取B站封面</p>
+            <div class="demo-block">
+                <div class="ui-form ui-border-t">
+                    <form action="get_bv.jsp" method="POST">
+                        <div class="ui-form-item ui-border-b">
+                            <label>
+                                输入bv号
+                            </label>
+                            <input type="text" placeholder="BV" name="bid" id="bid" />
+                            <a  href="javascript:void(0);" class="ui-icon-close" onclick="clearText('bid')"></a>
+                        </div>
+                        <div class="ui-btn-wrap">
+                            <button class="ui-btn-lg ui-btn-primary">
+                                确定
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="logo"></div>
+        </div>
+
+    </section>
+</body>
+
+<script type="text/javascript">
+    function clearText(bid) {
+        document.getElementById(bid).value = "";
+    }
+</script>
+</head>
+
+</html>
